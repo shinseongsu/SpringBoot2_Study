@@ -15,7 +15,7 @@ spring:
   profiles: real
 server:
   port: 8082
-
+---
 property:
   test:
     name: property depth test

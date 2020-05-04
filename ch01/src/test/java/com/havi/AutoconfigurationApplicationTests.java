@@ -1,3 +1,5 @@
+package com.havi;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Value;
@@ -6,12 +8,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
-import static org.hamcrest.core.Is.is;
+import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class AuthenticationApplicationTest {
+public class AutoconfigurationApplicationTests {
 
     @Value("${property.test.name}")
     private String propertyTestName;
@@ -25,7 +27,7 @@ public class AuthenticationApplicationTest {
     @Value("${propertyTestList}")
     private String[] propertyTestArray;
 
-    @Value("#{'${propertyTestList}', split(',')}")
+    @Value("#{'${propertyTestList}'.split(',')}")
     private List<String> propertyTestList;
 
     @Test
