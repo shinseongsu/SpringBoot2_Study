@@ -6,12 +6,15 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertThat;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(value = "value=test", properties = {"property.value=propertyTest"},
-        classes = {SpringBootTestApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(properties = {
+                            "property.value=propertyTest",
+                            "value=test"
+                    }
+                , classes = {SpringBootTestApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class SpringBootTestApplicationTests {
 
     @Value("${value}")
@@ -22,6 +25,7 @@ public class SpringBootTestApplicationTests {
 
     @Test
     public void contextLoads() {
+
         assertThat(value, is("test"));
         assertThat(propertyValue, is("propertyTest"));
     }
