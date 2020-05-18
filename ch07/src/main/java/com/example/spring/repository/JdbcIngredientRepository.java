@@ -1,6 +1,7 @@
 package com.example.spring.repository;
 
 import com.example.spring.vo.Ingredient;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -12,24 +13,30 @@ public class JdbcIngredientRepository implements IngredientRepository{
 
     private JdbcTemplate jdbc;
 
+    @Autowired
     public JdbcIngredientRepository(JdbcTemplate jdbc) {
         this.jdbc = jdbc;
     }
 
     @Override
     public Iterable<Ingredient> findAll() {
-        return jdbc.query(
-                "select id, name, type from Ingredient",
-                this::mapRowToIngredient
-        );
+        return jdbc.query("select id, name, type from Ingredient",
+                this::mapRowToIngredient);
     }
 
     @Override
     public Ingredient findById(String id) {
         return jdbc.queryForObject(
-                "select id, name, type from Ingredient where id = ?",
-                this::mapRowToIngredient, id
-        );
+                "select id, name, type from Ingredient where id=?",
+                this::mapRowToIngredient, id);
+    }
+
+    private Ingredient mapRowToIngredient(ResultSet rs, int rowNum)
+            throws SQLException {
+        return new Ingredient(
+                rs.getString("id"),
+                rs.getString("name"),
+                Ingredient.Type.valueOf(rs.getString("type")));
     }
 
     @Override
@@ -38,17 +45,8 @@ public class JdbcIngredientRepository implements IngredientRepository{
                 "insert into Ingredient (id, name, type) values (?, ?, ?)",
                 ingredient.getId(),
                 ingredient.getName(),
-                ingredient.getType().toString()
-        );
+                ingredient.getType().toString());
         return ingredient;
-    }
-
-    private Ingredient mapRowToIngredient(ResultSet rs, int rowNum) throws SQLException {
-        return new Ingredient(
-                rs.getString("id"),
-                rs.getString("name"),
-                Ingredient.Type.valueOf(rs.getString("type"))
-        );
     }
 }
 

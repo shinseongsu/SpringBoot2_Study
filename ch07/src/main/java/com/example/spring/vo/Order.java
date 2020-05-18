@@ -16,22 +16,23 @@ public class Order {
     private Long id;
     private Date placedAt;
 
-    @NotBlank(message = "Name is required")
+
+    @NotBlank(message="Name is required")
     private String deliveryName;
 
-    @NotBlank(message = "Street is required")
+    @NotBlank(message="Street is required")
     private String deliveryStreet;
 
-    @NotBlank(message = "City is required")
+    @NotBlank(message="City is required")
     private String deliveryCity;
 
-    @NotBlank(message = "State is required")
+    @NotBlank(message="State is required")
     private String deliveryState;
 
-    @NotBlank(message = "Zip code is required")
+    @NotBlank(message="Zip code is required")
     private String deliveryZip;
 
-    @CreditCardNumber(message = "Not a valid credit card number")
+    @CreditCardNumber(message="Not a valid credit card number")
     private String ccNumber;
 
     @Pattern(regexp="^(0[1-9]|1[0-2])([\\/])([1-9][0-9])$",
