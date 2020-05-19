@@ -1,11 +1,11 @@
 package com.example.spring.repository;
 
 import com.example.spring.vo.Ingredient;
+import org.springframework.data.repository.CrudRepository;
 
-public interface IngredientRepository {
-    Iterable<Ingredient> findAll();
+public interface IngredientRepository extends CrudRepository<Ingredient, String> {
 
-    Ingredient findById(String id);
-
-    Ingredient save(Ingredient ingredient);
+  //  Iterable<Ingredient> findAll();
+  //  Ingredient findById(String id);
+  // Ingredient save(Ingredient ingredient);
 }
