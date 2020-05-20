@@ -34,6 +34,6 @@ public class TacoCloudApplication {
                 repo.save(new Ingredient("SLSA", "Salsa", Type.SAUCE));
                 repo.save(new Ingredient("SRCR", "Sour Cream", Type.SAUCE));
             }
-        }
+        };
     }
 }
