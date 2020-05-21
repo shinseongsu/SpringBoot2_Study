@@ -1,6 +1,7 @@
 package com.sprinig.example.controller;
 
 import com.sprinig.example.repository.UserRepository;
+import com.sprinig.example.vo.RegistrationForm;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package com.sprinig.example.controller;
+package com.sprinig.example.vo;
 
 import com.sprinig.example.vo.User;
 import lombok.Data;
