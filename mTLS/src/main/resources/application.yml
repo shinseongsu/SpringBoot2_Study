@@ -10,4 +10,4 @@ server:
     trust-store: classpath:server.truststore
     trust-store-password: server
     trust-store-type: jks
-#    client-auth: need
+    client-auth: need
