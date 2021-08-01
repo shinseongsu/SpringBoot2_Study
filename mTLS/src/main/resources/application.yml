@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+  ssl:
+    enabled: true
+    key-store: classpath:server.jks
+    key-store-password: server
+    key-store-type: jks
+    key-alias: server
+    trust-store: classpath:server.truststore
+    trust-store-password: server
+    trust-store-type: jks
+#    client-auth: need
