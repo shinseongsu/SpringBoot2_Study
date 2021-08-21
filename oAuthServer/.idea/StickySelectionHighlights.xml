@@ -18,6 +18,36 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/authorize-server/src/main/java/com/example/oauth2/authorizeserver/models/entities/OauthClientEntity.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/authorize-server/src/main/java/com/example/oauth2/authorizeserver/models/entities/UserEntity.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/authorize-server/src/main/java/com/example/oauth2/authorizeserver/repositories/OauthClientRepository.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/authorize-server/src/main/java/com/example/oauth2/authorizeserver/repositories/UserRepository.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/authorize-server/src/main/java/com/example/oauth2/authorizeserver/services/OauthClientServiceImpl.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/authorize-server/src/main/java/com/example/oauth2/authorizeserver/services/UserServiceImpl.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/authorize-server/src/main/resources/application.yml">
           <value>
             <PaintGroupHighlightMap />
