@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class OauthClientServiceImpl {
+public class OauthClientServiceImpl implements OauthClientService {
     private final OauthClientRepository oauthClientRepository;
 
     @Autowired
@@ -16,14 +16,17 @@ public class OauthClientServiceImpl {
         this.oauthClientRepository = oauthClientRepository;
     }
 
+    @Override
     public List<OauthClientEntity> getOauthClientList() {
         return oauthClientRepository.findAll();
     }
 
+    @Override
     public OauthClientEntity getOauthClientById(String id) {
         return oauthClientRepository.getOne(id);
     }
 
+    @Override
     public OauthClientEntity getOauthClientByClientId(String clientId) {
         return oauthClientRepository.findByClientId(clientId);
     }

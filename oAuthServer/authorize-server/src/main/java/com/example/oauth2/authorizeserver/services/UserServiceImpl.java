@@ -13,6 +13,7 @@ public class UserServiceImpl implements UserService {
         this.userRepository = userRepository;
     }
 
+    @Override
     public UserEntity getUser(UserEntity userEntity) {
         return userRepository.findByUsername(userEntity.getUsername());
     }

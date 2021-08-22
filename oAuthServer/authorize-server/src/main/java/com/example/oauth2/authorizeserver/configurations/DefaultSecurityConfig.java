@@ -18,13 +18,13 @@ import static org.springframework.security.config.Customizer.withDefaults;
 public class DefaultSecurityConfig {
 
     @Bean
-    public PasswordEncoder password() {
+    public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
     @Bean
-    SecurityFilterChain defaultSecurityFilter(HttpSecurity http) throws Exception {
-        http.authorizeRequests(authorizeRequests -> authorizeRequests.anyRequest())
+    public SecurityFilterChain defaultSecurityFilter(HttpSecurity http) throws Exception {
+        http.authorizeRequests(authorizeRequests -> authorizeRequests.anyRequest().authenticated())
                 .formLogin(withDefaults());
 
         return http.build();

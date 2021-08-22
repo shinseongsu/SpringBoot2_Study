@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/authorize-server/src/main/java/com/example/oauth2/authorizeserver/services/OauthClientServiceImpl.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/authorize-server/src/main/java/com/example/oauth2/authorizeserver/services/UserServiceImpl.java">
           <value>
             <Attribute>

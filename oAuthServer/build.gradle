@@ -38,8 +38,8 @@ subprojects {
     apply plugin: 'io.spring.dependency-management'
     apply plugin: 'io.franzbecker.gradle-lombok'
 
-    sourceCompatibility = "11"
-    targetCompatibility = "11"
+    sourceCompatibility = "14"
+    targetCompatibility = "14"
     [compileJava, compileTestJava]*.options*.encoding = "UTF-8"
 
     dependencies {

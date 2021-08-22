@@ -13,7 +13,17 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/authorize-server/src/main/java/com/example/oauth2/authorizeserver/configurations/AuthorizationServerConfig.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/authorize-server/src/main/java/com/example/oauth2/authorizeserver/configurations/DefaultSecurityConfig.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/authorize-server/src/main/java/com/example/oauth2/authorizeserver/models/dtos/CustomUserDetails.java">
           <value>
             <PaintGroupHighlightMap />
           </value>
@@ -28,6 +38,11 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/authorize-server/src/main/java/com/example/oauth2/authorizeserver/repositories/CustomRegisteredClientRepository.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/authorize-server/src/main/java/com/example/oauth2/authorizeserver/repositories/OauthClientRepository.java">
           <value>
             <PaintGroupHighlightMap />
@@ -38,7 +53,22 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/authorize-server/src/main/java/com/example/oauth2/authorizeserver/services/OauthClientService.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/authorize-server/src/main/java/com/example/oauth2/authorizeserver/services/OauthClientServiceImpl.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/authorize-server/src/main/java/com/example/oauth2/authorizeserver/services/UserDetailsServiceImpl.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/authorize-server/src/main/java/com/example/oauth2/authorizeserver/services/UserService.java">
           <value>
             <PaintGroupHighlightMap />
           </value>
@@ -58,7 +88,57 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/client-server/build.gradle">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/client-server/src/main/java/com/example/oauth2/clientserver/ClientServerApplication.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/client-server/src/main/java/com/example/oauth2/clientserver/configuration/SecurityConfig.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/client-server/src/main/java/com/example/oauth2/clientserver/configuration/WebClientConfig.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/client-server/src/main/java/com/example/oauth2/clientserver/controllers/SampleController.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/client-server/src/main/resources/application.yml">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/resource-server/build.gradle">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resource-server/src/main/java/com/example/oauth2/resourceserver/ResourceServerApplication.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resource-server/src/main/java/com/example/oauth2/resourceserver/configuration/ResourceServerConfiguration.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resource-server/src/main/java/com/example/oauth2/resourceserver/controller/SampleController.java">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resource-server/src/main/resources/application.yml">
           <value>
             <PaintGroupHighlightMap />
           </value>

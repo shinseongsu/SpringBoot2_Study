@@ -1,0 +1,8 @@
+com/example/oauth2/clientserver/ClientServerApplication.java
+ com.example.oauth2.clientserver.ClientServerApplication
+com/example/oauth2/clientserver/configuration/WebClientConfig.java
+ com.example.oauth2.clientserver.configuration.WebClientConfig
+com/example/oauth2/clientserver/controllers/SampleController.java
+ com.example.oauth2.clientserver.controllers.SampleController
+com/example/oauth2/clientserver/configuration/SecurityConfig.java
+ com.example.oauth2.clientserver.configuration.SecurityConfig

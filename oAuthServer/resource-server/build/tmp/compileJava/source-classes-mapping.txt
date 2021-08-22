@@ -1,0 +1,6 @@
+com/example/oauth2/resourceserver/controller/SampleController.java
+ com.example.oauth2.resourceserver.controller.SampleController
+com/example/oauth2/resourceserver/ResourceServerApplication.java
+ com.example.oauth2.resourceserver.ResourceServerApplication
+com/example/oauth2/resourceserver/configuration/ResourceServerConfiguration.java
+ com.example.oauth2.resourceserver.configuration.ResourceServerConfiguration

@@ -3,24 +3,29 @@ package com.example.oauth2.authorizeserver.models.entities;
 import lombok.*;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 
 @EqualsAndHashCode(callSuper = false)
 @Getter
-@Table(name="users", schema = "security")
+@Table(name = "users", schema = "security")
+@Entity
 @ToString
-@NoArgsConstructor(access= AccessLevel.PROTECTED)
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class UserEntity implements Serializable {
 
     @Id
     @Column(nullable = false)
     private long id;
+
     @Column(length = 50)
     private String username;
+
     @Column(length = 512)
     private String password;
+
     @Column(length = 1000)
     private String roles;
 
