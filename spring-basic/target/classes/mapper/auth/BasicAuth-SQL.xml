@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BasicAuth">
+
+    <resultMap type="MemberVO" id="memberMap">
+		<id property="username" column="username" />
+		<result property="password" column="userpw" />
+		<collection property="authList" resultMap="authMap">
+		</collection>
+	</resultMap>
+	
+	<resultMap type="AuthVO" id="authMap">
+		<result property="username" column="username" />
+		<result property="auth" column="auth" />
+	</resultMap>
+	
+ 
+    <select id="Login" parameterType="String" resultMap="memberMap">
+        SELECT username as username
+             , userpw as userpw
+             , auth as auth
+          FROM MEMBERS
+         WHERE username = #{userid}    
+    </select>
+
+</mapper>
