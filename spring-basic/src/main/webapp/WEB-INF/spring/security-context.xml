@@ -10,11 +10,10 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd">
 
 	<bean id="customUserDetails" class="com.spring.bluewalnut.security.CustomBasicAuthService" />
-
-	<security:http create-session="never" use-expressions="true">
+	
+	<security:http create-session="stateless" use-expressions="true">
 		
 		<security:intercept-url pattern="/api/**" access="hasRole('ROLE_USER')" />
-		<!-- <security:intercept-url method="OPTIONS" pattern="/**" access="permitAll"/> -->
 		
 		<security:cors configuration-source-ref="corsSource" />
 		
